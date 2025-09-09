@@ -1,0 +1,27 @@
+<project name="MyJavaProject" default="run" basedir=".">
+    <property name="src.dir" location="src"/>
+    <property name="build.dir" location="bin"/>
+    <property name="classes.dir" location="${build.dir}/classes"/>
+    <property name="jar.dir" location="${build.dir}/jar"/>
+
+    <target name="init">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${jar.dir}"/>
+    </target>
+
+    <target name="compile" depends="init" description="Compile source code">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}"/>
+    </target>
+
+    <target name="jar" depends="compile" description="Create a jar file">
+        <jar jarfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}"/>
+    </target>
+
+    <target name="run" depends="jar" description="Run the application">
+        <java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
+    </target>
+
+    <target name="clean" description="Clean build directories">
+        <delete dir="${build.dir}"/>
+    </target>
+</project>
