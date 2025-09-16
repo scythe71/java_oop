@@ -24,4 +24,9 @@
     <target name="clean" description="Clean build directories">
         <delete dir="${build.dir}"/>
     </target>
+
+    <target name="build">
+        <mkdir dir="bin"/>
+        <javac srcdir="src" destdir="bin" includeantruntime="false"/>
+    </target>
 </project>
