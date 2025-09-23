@@ -1,7 +1,11 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "lib\\src\\DAY_1",
+        "lib\\src\\DAY_2",
+        "lib\\src\\DAY_3"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar"
+        "d:\\KULIAH_3\\oop_java\\lib\\bin\\jar\\MyJavaProject.jar"
     ]
 }
