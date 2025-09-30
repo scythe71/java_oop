@@ -1,27 +1,27 @@
-package P_ProsByValue;
-public class P_prosbyvalue {
+package p_prosbyvalue;
+public class P_ProsByValue {
     public static void main(String[] args) {
         int x, y;
-        TestPassValue e;
+        TestPassValue z;
 
-        e = new TestPassValue(53, 103);
+        z = new TestPassValue(53, 103);
         x = 13;
         y = 23;
 
         System.out.println("Nilai sebelum passed by value: ");
         System.out.println("x = " + x);
         System.out.println("y = " + y);
-        e.hitung(x, y);
+        z.hitung(x, y);
         System.out.println("Nilai setelah passed by value: ");
         System.out.println("x = " + x);
         System.out.println("y = " + y);
 
         System.out.println("Nilai sebelum passed by reference: ");
-        System.out.println("e.i = " + e.i);
-        System.out.println("e.j = " + e.j);
-        e.hitung(e);
+        System.out.println("z.i = " + z.i);
+        System.out.println("z.j = " + z.j);
+        z.hitung(z);
         System.out.println("Nilai setelah passed by reference: ");
-        System.out.println("e.i = " + e.i);
-        System.out.println("e.j = " + e.j);
+        System.out.println("z.i = " + z.i);
+        System.out.println("z.j = " + z.j);
     }
 }
