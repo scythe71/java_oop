@@ -1,7 +1,7 @@
 package pagre_prodi;
 public class Jurusan {
-    private String kode, nama;
-    private Mahasiswa daftarMhs[] = new Mahasiswa[11];
+    private final String kode, nama;
+    private final Mahasiswa daftarMhs[] = new Mahasiswa[11];
     private int jmlMhs;
     
     public Jurusan(String kode, String nama) {
