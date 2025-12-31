@@ -9,7 +9,7 @@ package net.bangundatar;
  * @author Ramma Shadiqu
  */
 public class Lingkaran extends BangunDatar{
-    int r;
+    // int r;
     
     public Lingkaran(int r) {
         this.r = r;
